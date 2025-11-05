@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "roboto", sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.5em;
+}
+p {
+  font-size: 1em;
+}
+ul {
+  list-style: none;
+  font-size: 1em;
+}
+section a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+section a:hover {
+  color: purple;
+  text-shadow: 1px 1px 3.8px rgba(242, 6, 191, 0.6);
+  font-size: 1.1em;
+}
+
+button {
+  font-size: 1.6em;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 15px;
+  color: white;
+  background-color: purple;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+}
+button:hover {
+  background-color: rgb(100, 0, 100);
+  border: 2px solid rgba(242, 6, 191, 0.6);
+  box-shadow: 1px 1px 30px 4px rgba(242, 6, 191, 0.6);
+  cursor: pointer;
+  font-size: 1.65em;
+}
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+header {
+  background-color: rgb(220, 220, 220);
+}
+header .logo {
+  margin: 0;
+  font-weight: bold;
+  color: purple;
+  font-size: 1.8em;
+  /* text-shadow: 1px 1px 8px rgba(242, 6, 191, 0.7); */
+  text-decoration: underline;
+}
+header .container {
+  padding: 25px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+header a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  transition: all 0.3s;
+}
+header a:hover {
+  color: purple;
+}
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(IMG/gamer1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#hero h1 {
+  color: white;
+}
+#about .container {
+  text-align: center;
+  padding: 100px 12px;
+}
+#category .container {
+  padding: 60px 10px;
+}
+#category {
+  background-color: rgb(30, 30, 30);
+  color: white;
+  text-align: center;
+}
+#category p {
+  display: none;
+}
+#category h2 {
+  margin-top: 0;
+  font-size: 2.5em;
+}
+#category .carta {
+  background-size: cover;
+  background-position: center center;
+  border-radius: 15px;
+  padding: 40px;
+  margin: 25px;
+}
+.carta:first-child {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(IMG/fortnite.jpg);
+}
+.carta:nth-child(2) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(IMG/console.jpg);
+}
+.carta:nth-child(3) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(IMG/warzone.jpg);
+}
+#details .container {
+  text-align: left;
+  padding: 100px 12px;
+}
+#details li {
+  margin-bottom: 40px;
+  margin-right: 0;
+  margin-left: 0;
+  font-weight: bold;
+  font-size: 2em;
+}
+#details span {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+#join {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  background-color: rgb(30, 30, 30);
+}
+#join h2 {
+  font-size: 7vw;
+}
+#join div {
+  margin: 40px;
+  padding: 10px;
+}
+footer {
+  background-color: rgb(220, 220, 220);
+}
+footer p {
+  margin: 0;
+}
+footer .container {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* deskstop version */
+
+@media (min-width: 800px) {
+  header {
+    position: fixed;
+    width: 100%;
+  }
+  header .container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  header nav {
+    padding-bottom: 0;
+    margin-right: 10px;
+    flex-direction: row;
+  }
+  #about .container {
+    display: flex;
+    justify-content: space-around;
+  }
+  #about .aboutText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+  }
+  #about .containerImg {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url(IMG/gamer2.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 450px;
+    border-radius: 10px;
+  }
+  #category .gat {
+    display: flex;
+    justify-content: center;
+  }
+  #category p {
+    display: block;
+  }
+  #category button {
+    display: none;
+  }
+}
